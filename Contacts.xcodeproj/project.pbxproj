@@ -15,6 +15,9 @@
 		A5E850EC268E5145000FFEA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E850EA268E5145000FFEA5 /* LaunchScreen.storyboard */; };
 		A5E850F7268E5145000FFEA5 /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E850F6268E5145000FFEA5 /* ContactsTests.swift */; };
 		A5E85102268E5145000FFEA5 /* ContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E85101268E5145000FFEA5 /* ContactsUITests.swift */; };
+		A5E85110268E5820000FFEA5 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8510F268E5820000FFEA5 /* ContactsViewController.swift */; };
+		A5E85112268E5AF7000FFEA5 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E85111268E5AF7000FFEA5 /* ContactTableViewCell.swift */; };
+		A5E8AE39268F23A100798F47 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8AE38268F23A100798F47 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		A5E850FD268E5145000FFEA5 /* ContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E85101268E5145000FFEA5 /* ContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUITests.swift; sourceTree = "<group>"; };
 		A5E85103268E5145000FFEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E8510F268E5820000FFEA5 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		A5E85111268E5AF7000FFEA5 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		A5E8AE38268F23A100798F47 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				A5E850E1268E5144000FFEA5 /* SceneDelegate.swift */,
 				A5E850E3268E5144000FFEA5 /* ViewController.swift */,
 				A5E850E5268E5144000FFEA5 /* Main.storyboard */,
+				A5E8AE38268F23A100798F47 /* InfoViewController.swift */,
+				A5E8510F268E5820000FFEA5 /* ContactsViewController.swift */,
+				A5E85111268E5AF7000FFEA5 /* ContactTableViewCell.swift */,
 				A5E850E8268E5145000FFEA5 /* Assets.xcassets */,
 				A5E850EA268E5145000FFEA5 /* LaunchScreen.storyboard */,
 				A5E850ED268E5145000FFEA5 /* Info.plist */,
@@ -259,7 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5E850E4268E5144000FFEA5 /* ViewController.swift in Sources */,
+				A5E85112268E5AF7000FFEA5 /* ContactTableViewCell.swift in Sources */,
+				A5E85110268E5820000FFEA5 /* ContactsViewController.swift in Sources */,
 				A5E850E0268E5144000FFEA5 /* AppDelegate.swift in Sources */,
+				A5E8AE39268F23A100798F47 /* InfoViewController.swift in Sources */,
 				A5E850E2268E5144000FFEA5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ITIS.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -463,7 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ITIS.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
