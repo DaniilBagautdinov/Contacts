@@ -199,6 +199,9 @@
 		A5E850D4268E5144000FFEA5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					trr,
+				);
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {

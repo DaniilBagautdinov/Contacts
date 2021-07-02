@@ -14,10 +14,6 @@ protocol InfoViewControllerDelegate: AnyObject {
 class InfoViewController: UIViewController {
     @IBOutlet weak var personImageView: UIImageView!
     @IBOutlet weak var numberLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var surnameLabel: UILabel!
-    @IBOutlet weak var workLabel: UILabel!
-    @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var numberTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var surnameTextField: UITextField!
@@ -38,17 +34,18 @@ class InfoViewController: UIViewController {
         commentTextView.text = contact?.comment
     }
     
-
+    
     
     @IBAction func saveButton(_ sender: Any) {
         contact?.number = numberTextField.text ?? ""
         contact?.workPlace = workTextField.text ?? ""
+        contact?.comment = commentTextView.text ?? ""
         
         if let contact = contact{
             delegate?.saveNewDataOfContact(contact)
         }
         
-//        navigationController?.popViewController(animated: true)
+        //        navigationController?.popViewController(animated: true)
         dismiss(animated: true)
     }
     

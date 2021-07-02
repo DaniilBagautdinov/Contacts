@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var helloLabel: UILabel!
     
     @IBOutlet weak var usernameTextField: UITextField!
@@ -20,11 +20,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
     }
-
-
+    
+    
     @IBAction func signInAction(_ sender: Any) {
         if usernameTextField.text == username, passwordTextField.text == password{
             guard let contactsViewController = storyboard?.instantiateViewController(withIdentifier: "ContactsViewController") as? ContactsViewController else {return}
